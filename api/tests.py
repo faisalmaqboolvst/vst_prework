@@ -56,7 +56,7 @@ class FileDataAPITest(TestCase):
         self.assertTrue(len(data) > 0)
         self.assertIn("first_name", data[0])
 
-    @classmethod
-    def tearDownClass(cls):
-        # Clean up the collection after tests
-        filedata_collection.delete_many({})  # Remove all test data
+    # @classmethod
+    # def tearDownClass(cls):
+    #     # Clean up the collection after tests
+    #     filedata_collection.delete_many({})  # Remove all test data
